@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="vue-app"></div>
+    <header class="header">
+        <div>
+            <img class="header__logo" src="logo.png" alt="" />
+        </div>
+        <div class="header__navmenu">
+            <ul>
+                <li>Главная</li>
+                <li>Личный кабинет</li>
+                <li>Регистрация</li>
+                <li>Авторизация</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main__item">
+            <img src="problem.png" alt="" />
+            <ul>
+                <li>Временная метка</li>
+                <li>Название</li>
+                <li>Категория заявки</li>
+            </ul>
+        </div>
+        <div class="main__item">
+            <img src="problem.png" alt="" />
+            <ul>
+                <li>Временная метка</li>
+                <li>Название</li>
+                <li>Категория заявки</li>
+            </ul>
+        </div>
+        <div class="main__item">
+            <img src="problem.png" alt="" />
+            <ul>
+                <li>Временная метка</li>
+                <li>Название</li>
+                <li>Категория заявки</li>
+            </ul>
+        </div>
+        <div class="main__item">
+            <img src="problem.png" alt="" />
+            <ul>
+                <li>Временная метка</li>
+                <li>Название</li>
+                <li>Категория заявки</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>2021 &copy; Powered by Vue</div>
+    </footer>
+
+    <script>
+    const titleComponent = "<h1>{{ title }}</h1>";
+    new Vue (
+    {
+      el: "#vue-app",
+      template: titleComponent,
+      data: function () { return { title: "Stranger Vue things" }; }
+    });
+    </script>
+</body>
+</html>
